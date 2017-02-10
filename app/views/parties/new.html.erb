@@ -1,34 +1,100 @@
 <h1>Add a Party</h1>
 <%= form_for(@party) do |f| %>
-  <label>Hosted By</label>
   <%= f.text_field(:host_name) %>
+  <div class="row">
+    <div class="col-md-3">
+      <label>Hosted By</label>
+    </div>
+    <div class="col-md-6">
+      <%= f.text_field(:host_name) %>
+    </div>
+  </div>
 
-  <label>Host Email</label>
-  <%= f.text_field(:host_email) %>
+  <div class="row">
+    <div class="col-md-3">
+      <label>Host Email</label>
+    </div>
+    <div class="col-md-6">
+      <%= f.text_field(:host_email) %>
+    </div>
+  </div>
 
-  <label>Number of Guests</label>
-  <%= f.text_field(:numgsts) %>
+  <div class="row">
+    <div class="col-md-3">
+      <label>Number of Guests</label>
+    </div>
+    <div class="col-md-6">
+      <%= f.number_field(:numgsts) %>
+    </div>
+  </div>
 
-  <label>Guest Names (separate by ',')</label>
-  <%= f.text_area(:guest_names) %>
+  <div class="row">
+    <div class="col-md-3">
+      <label>Guest Name (separate by ',')</label>
+    </div>
+    <div class="col-md-6">
+      <%= f.text_area(:guest_names) %>
+    </div>
+  </div>
 
-  <label>Venue Name</label>
-  <%= f.text_field(:venue) %>
+  <div class="row">
+    <div class="col-md-3">
+      <label>Venue Name</label>
+    </div>
+    <div class="col-md-6">
+      <%= f.text_field(:venue) %>
+    </div>
+  </div>
 
-  <label>Venue Location</label>
-  <%= f.text_field(:location) %>
+  <div class="row">
+    <div class="col-md-3">
+      <label>Venue Location</label>
+    </div>
+    <div class="col-md-6">
+      <%= f.text_field(:location) %>
+    </div>
+  </div>
 
-  <label>Party Theme</label>
-  <%= f.text_field(:theme) %>
+  <div class="row">
+    <div class="col-md-3">
+      <label>Party Theme</label>
+    </div>
+    <div class="col-md-6">
+      <%= f.text_field(:theme) %>
+    </div>
+  </div>
 
-  <label>Party Start Time</label>
-  <%= f.datetime_select(:when) %>
+  <div class="row">
+    <div class="col-md-3">
+      <label>Party start time</label>
+    </div>
+    <div class="col-md-6">
+      <%= f.datetime_select(:when_at) %>
+    </div>
+  </div>
 
-  <label>Party End Time</label>
-  <%= f.datetime_select(:when_its_over) %>
+  <div class="row">
+    <div class="col-md-3">
+      <label>Party End Time</label>
+    </div>
+    <div class="col-md-6">
+      <%= f.datetime_select(:when_its_over) %>
+    </div>
+  </div>
 
-  <label>Description</label>
-  <%= f.text_area(:descript) %>
+  <div class="row">
+    <div class="col-md-3">
+      <label>Description</label>
+    </div>
+    <div class="col-md-6">
+      <%= f.text_field(:descript) %>
+    </div>
+  </div>
 
-  <%= f.submit %>
+  <div class="row">
+    <div class="col-md-3">
+      <%= f.submit %>
+    </div>
+  </div>
+
 <%- end %>

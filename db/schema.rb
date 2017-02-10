@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170210221746) do
+ActiveRecord::Schema.define(version: 20170210230031) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -23,7 +23,7 @@ ActiveRecord::Schema.define(version: 20170210221746) do
     t.string   "venue"
     t.string   "location"
     t.string   "theme"
-    t.datetime "when"
+    t.datetime "when_at"
     t.datetime "when_its_over"
     t.text     "descript"
     t.datetime "created_at",    null: false
